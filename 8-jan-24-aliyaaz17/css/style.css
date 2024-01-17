@@ -1,0 +1,178 @@
+*{margin: 0px auto; }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    margin: -110px 0px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    background-color:#F97B22 ;
+    color: white;
+    height: 90px;
+}
+
+.logo{
+    float: left;
+    padding: 18px 0px 20px 80px;
+}
+
+.header-logo{
+    font-family: monospace;
+    font-size: 60px;
+    letter-spacing: -4px;
+    font-weight: bolder;
+    float: left;
+    color: white;
+    padding: 10px 0px 10px 5px;
+}
+
+.header-name {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 50px 20px;
+}
+
+.main{
+    margin: 110px 20px 20px 20px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #FEE8B0;
+    position: relative;
+    min-height: 1500px;
+    text-align:center;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    line-height: 300%;
+    color: #F97B22;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 4px;
+}
+
+h2{
+    text-align: center;
+    line-height: 300%;
+    color: #7C9070;
+}
+
+h3{
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    background-color: #F97B22;
+    border-radius: 8px;
+    color: white;
+    font-size: 26px;
+    padding: 20px;
+}
+
+h5{
+    text-align: center;
+    font-size: smaller;
+}
+
+img{
+    padding: 80px;
+    padding-bottom: 0px;
+}
+
+table {
+    border: solid;
+    border-radius: 10px;
+    border-color: #FEE8B0;
+    text-align: center;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+td{
+    line-height: 20px;
+}
+
+.pilihan{
+    background-color: #7C9070;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 8px;    
+}
+
+.pilihan:hover{
+    background-color: #9CA777;
+}
+
+.inputText{
+    border:3px solid #7C9070;
+    border-radius: 14px;
+    font-size: 18px;
+    text-align: center;
+    width: 460px;
+    height: 36px;
+}
+
+figcaption{
+    font-size: smaller;
+    padding-top: 5px;
+    padding-bottom: 80px;
+}
+
+.hasilPerhitungan{
+    background-color: #7C9070;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hasilPerhitungan:hover{
+    background-color: #9CA777;
+}
+
+.reset{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.reset:hover{
+    background-color: maroon;
+}
+
+.hsl {
+    font-weight: bold;
+    text-align: center;
+}
+
+.tbpersegi{
+    display: none;
+}
+
+.tbpersegiPanjang{
+    display: none;
+}
+
+.tblingkaran {
+    display: none;
+}
