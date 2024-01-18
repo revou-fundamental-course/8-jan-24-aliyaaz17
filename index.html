@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Katik!</title>
+    
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="image/Logo.png" alt="logo" width="60px">
+        <div class="header-logo">Katik!</div>
+        <div class="header-name">Kalkulator Matematika</div>
+    </div>
+    <div class="main">
+        <h1>Welcome to Katik!</h1>
+        <h3>Hai teman-teman! Selamat datang di Kalkulator Matematika</h3>
+        <h5>Web ini dirancang untuk membantu kalian dalam menghitung Luas dan Keliling dari bangun datar</h5>
+        <h5>Persegi, Persegi Panjang dan Lingkaran</h5>
+        <h2>Silakan Pilih Yang Kalian Butuhkan</h2>
+        
+        <button class="pilihan" onclick="toggle(this)">Klik untuk Persegi</button>
+        <button class="pilihan" onclick="toggle1(this)">Klik untuk Persegi Panjang</button>
+        <button class="pilihan" onclick="toggle2(this)">Klik untuk Lingkaran</button>
+    <br />
+    <table class="tbpersegi" id="mytable1">
+        </tr>
+        <tr>
+            <th colspan="2">
+                <h4>Persegi</h4>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="image/persegi.png" alt="gambar persegi" width="175px">
+                <figcaption>Persegi</figcaption>
+            </td>
+        </tr>
+        <tr><form id="hitungP">
+            <td colspan="2">
+                <input type="text" class="inputText" id="sp" placeholder="Masukan Sisi Persegi">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="hasilPerhitungan" onclick="hasilP()" value="Hasil"></input></td>
+            <td><input type="button" class="reset" onclick="reset1()" value="Reset"></input></td>
+        </tr>
+        <tr>
+            <td>Keliling Persegi</td>
+            <td>Luas Persegi</td>
+        </tr>
+        <tr>
+            <td>4 X Sisi</td>
+            <td>Sisi X Sisi</td>
+        </tr>
+        <tr>
+            <td><p id="rumusKelilingP" class="hsl"></p></td>
+            <td><p id="rumusLuasP" class="hsl"></p></td>
+        </tr>
+        <tr>
+            <td><p id="hasilKelilingP" class="hsl"></p></td>
+            <td><p id="hasilLuasP" class="hsl"></p></td>
+        </tr>
+        </form>
+    </table>
+
+    <table class="tbpersegiPanjang" id="mytable2">
+        </tr>
+        <tr>
+            <th colspan="2">
+                <h4>Persegi Panjang</h4>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="image/persegi-panjang.png" alt="gambar persegi panjang" width="260px">
+                <figcaption>Persegi Panjang</figcaption>
+            </td>
+        </tr>
+        <tr><form id="hitungPP">
+            <td colspan="2">
+                <input type="text" class="inputText" id="ppp" placeholder="Masukan Panjang">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="text" class="inputText" id="lpp" placeholder="Masukan Lebar">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="hasilPerhitungan" onclick="hasilPP()" value="Hasil"></input></td>
+            <td><input type="button" class="reset" onclick="reset2()" value="Reset"></input></td>
+        </tr>
+        <tr>
+            <td>Keliling Persegi Panjang</td>
+            <td>Luas Persegi Panjang</td>
+        </tr>
+        <tr>
+            <td>2 X (Panjang + Lebar)</td>
+            <td>Panjang X Lebar</td>
+        </tr>
+        <tr>
+            <td><p id="rumusKelilingPP" class="hsl"></p></td>
+            <td><p id="rumusLuasPP" class="hsl"></p></td>
+        </tr>
+        <tr>
+            <td><p id="hasilKelilingPP" class="hsl"></p></td>
+            <td><p id="hasilLuasPP" class="hsl"></p></td>
+        </tr>
+        </form>
+    </table>
+
+    <table class="tblingkaran" id="mytable3">
+        </tr>
+        <tr>
+            <th colspan="2">
+                <h4>Lingkaran</h4>
+            </th>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <img src="image/Lingkaran.png" alt="Lingkaran" width="175px">
+                <figcaption>Lingkaran</figcaption>
+            </td>
+        </tr>
+        <tr><form id="hitungL">
+            <td colspan="2">
+                <input type="text" class="inputText" id="rl" placeholder="Masukan Jari-Jari Lingkaran">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" class="hasilPerhitungan" onclick="hasilL()" value="Hasil"></input></td>
+            <td><input type="button" class="reset" onclick="reset3()" value="Reset"></input></td>
+        </tr>
+        <tr>
+            <td>Keliling Lingkaran</td>
+            <td>Luas Lingkaran</td>
+        </tr>
+        <tr>
+            <td>2 X &#960 X Jari-Jari</td>
+            <td>&#960 X Jari-Jari<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td><p id="rumusKelilingL" class="hsl"></p></td>
+            <td><p id="rumusLuasL" class="hsl"></p></td>
+        </tr>
+        <tr>
+            <td><p id="hasilKelilingL" class="hsl"></p></td>
+            <td><p id="hasilLuasL" class="hsl"></p></td>
+        </tr>
+        </form>
+    </table>
+
+    <script src="js/script.js"></script>
+    </div>
+</body>
+</html>
